@@ -20,95 +20,115 @@
       </a>
       <a class="link" href="#">Instagram</a>
       <a class="link" href="#">Youtube</a>
-      <nav>
-        <ul class="list navbar">
-          <li><a class="nav link" href="#About">About</a></li>
-          <li><a class="nav link" href="#servises">Services and prices</a></li>
-          <li><a class="nav link" href="#barbers">Barbers</a></li>
-          <li><a class="nav link" href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
-      <a class="link header-contact" href="tel:+380441111111"
-        >+38 044 111 11 11</a
-      >
-      <button type="button" class="header-button">ONLINE-BOOKING</button>
+      <div class="background">
+        <nav>
+          <ul class="list navbar">
+            <li><a class="nav link" href="#About">About</a></li>
+            <li>
+              <a class="nav link" href="#servises">Services and prices</a>
+            </li>
+            <li><a class="nav link" href="#barbers">Barbers</a></li>
+            <li><a class="nav link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <a class="link header-contact" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button type="button" class="header-button">ONLINE-BOOKING</button>
+
+        <section class="hero">
+          <span class="uptitle dark-uptitle">A hair salon for men in Kyiv</span>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-p">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
+        </section>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero-title">BarberShop</h1>
-        <p>
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
-      </section>
       <section class="about">
         <ul class="about-ul list">
           <li class="about-li">
-            <img src="./image/mainone.jpg" alt="" width="270" />
+            <img
+              src="./image/mainone.jpg"
+              alt=""
+              width="270"
+              class="img-about"
+            />
           </li>
           <li class="about-li">
-            <img src="./image/maintwo.jpg" alt="" width="270" />
+            <img
+              src="./image/maintwo.jpg"
+              alt=""
+              width="270"
+              class="img-about"
+            />
           </li>
         </ul>
-        <div>
-          <span id="About">About</span>
-          <h2 class="about-title">Best Barbershop in your city</h2>
-          <p>
+        <div class="about-right">
+          <span id="About" class="uptitle">About</span>
+          <h2 class="title h-black">Best Barbershop in your city</h2>
+          <p class="about-p">
             If you want to add more confidence to your image, you should
             definitely visit us.
           </p>
-          <p>
+          <p class="about-p">
             We are a team that never stops at what has been achieved and are
             thirsty for changes. And when you fall into the hands of our master,
             you will never be the same again. We are a team that is always "on
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
+          <button type="button" class="about-button">ONLINE-BOOKING</button>
         </div>
-        <button type="button" class="about-button">ONLINE-BOOKING</button>
       </section>
       <section class="servises" id="servises">
-        <span>Spend your time with the best masters</span>
-        <h2>Services and prices</h2>
-        <ul class="list">
-          <li>
-            <p>Men's haircut</p>
-            <span>from 300 uah.</span>
-          </li>
-          <li>
-            <p>Beard trim</p>
-            <span>from 300 uah.</span>
-          </li>
-          <li>
-            <p>Mustache trim</p>
-            <span>from 200 uah.</span>
-          </li>
-          <li>
-            <p>Straight razor shave</p>
-            <span>from 200 uah.</span>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <p>Trainee’s haircut</p>
-            <span>from 50 uah.</span>
-          </li>
-          <li>
-            <p>Haircut under the nozzle</p>
-            <span>from 200 uah.</span>
-          </li>
-          <li>
-            <p>Children’s haircut (0-12 y.o.)</p>
-            <span>from 300 uah.</span>
-          </li>
-          <li>
-            <p>Camouflage of gray hair</p>
-            <span>from 200 uah.</span>
-          </li>
-        </ul>
-        <button type="button">ONLINE-BOOKING</button>
+        <span class="uptitle dark-uptitle"
+          >Spend your time with the best masters</span
+        >
+        <h2 class="title h-white">Services and prices</h2>
+        <div class="div-servises">
+          <ul class="list servises-left">
+            <li class="product">
+              <p>Men's haircut</p>
+              <span>from 300 uah.</span>
+            </li>
+            <li class="product">
+              <p>Beard trim</p>
+              <span>from 300 uah.</span>
+            </li>
+            <li class="product">
+              <p>Mustache trim</p>
+              <span>from 200 uah.</span>
+            </li>
+            <li class="product">
+              <p>Straight razor shave</p>
+              <span>from 200 uah.</span>
+            </li>
+          </ul>
+          <ul class="list servises-right">
+            <li class="product">
+              <p>Trainee’s haircut</p>
+              <span>from 50 uah.</span>
+            </li>
+            <li class="product">
+              <p>Haircut under the nozzle</p>
+              <span>from 200 uah.</span>
+            </li>
+            <li class="product">
+              <p>Children’s haircut (0-12 y.o.)</p>
+              <span>from 300 uah.</span>
+            </li>
+            <li class="product">
+              <p>Camouflage of gray hair</p>
+              <span>from 200 uah.</span>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="services-button">ONLINE-BOOKING</button>
       </section>
-      <section>
+      <section class="benefits">
         <ul class="list">
           <li>
             <span>600<sup>+</sup></span>
@@ -128,8 +148,8 @@
           </li>
         </ul>
         <div>
-          <span>Old traditional school</span>
-          <h2>¿Why people come to us?</h2>
+          <span class="uptitle">Old traditional school</span>
+          <h2 class="title h-black">¿Why people come to us?</h2>
           <p>
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
@@ -137,8 +157,8 @@
         </div>
       </section>
       <section class="barbers" id="barbers">
-        <span>For true enjoyers of the atmosphere</span>
-        <h2>Our barbers</h2>
+        <span class="uptitle">For true enjoyers of the atmosphere</span>
+        <h2 class="title h-black">Our barbers</h2>
         <ul class="list">
           <li>
             <img
@@ -238,8 +258,9 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="none">Portfolio</h2>
+      <section class="portfolio">
+        <span class="uptitle">In Latin, "barba" means "beard"</span>
+        <h2 class="visually-hidden">Portfolio</h2>
         <ul class="list">
           <li>
             <img
@@ -260,9 +281,9 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="online-booking-contacts">
         <div class="online-booking">
-          <h2>Online-booking</h2>
+          <h2 class="title h-white">Online-booking</h2>
           <input type="text" placeholder="NAME*" />
           <input type="tel" placeholder="PHOME*" />
           <form>
@@ -272,7 +293,7 @@
           <button type="button">Send</button>
         </div>
         <div class="contacts">
-          <h2>Contacts</h2>
+          <h2 class="title h-white">Contacts</h2>
           <address>
             <ul class="list">
               <li>
@@ -298,7 +319,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>&#169; Copyright 2020</p>
       <ul id="contacts list">
         <li>

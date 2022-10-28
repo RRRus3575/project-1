@@ -2,12 +2,26 @@
   --font-one: "Open Sans", sans-serif;
   --font-two: "Raleway", sans-serif;
   --hover: #ff6c00;
+  --gray: #303030;
+  --p-dark: #9da4bd;
+  --p-white: #555555;
 }
 body {
   font-family: var(--font-one);
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
-.header {
+.header,
+.about,
+.servises,
+.benefits,
+.barbers,
+.portfolio,
+.online-booking-contacts,
+.footer {
+  padding-left: 13.5%;
+  padding-right: 13.5%;
 }
 .logo {
 }
@@ -21,7 +35,8 @@ body {
 }
 .navbar {
 }
-.header a {
+.nav,
+.header-contact {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3333;
@@ -35,14 +50,124 @@ body {
 .header-contact {
   text-transform: uppercase;
 }
-.header-button {
+button {
+  width: 160px;
+  height: 40px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #ffffff;
   border: 1px solid var(--hover);
   border-radius: 25px;
+}
+.header-button {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.hero-title {
+  font-family: var(--font-two);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.1805;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.dark-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.background {
+  background-image: url(../image/hero.jpg);
+}
+.hero-p {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+  color: var(--p-dark);
+}
+.title {
+  font-family: var(--font-two);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1667;
+  letter-spacing: 0.05em;
+}
+.h-white {
+  color: #ffffff;
+}
+.h-black {
+  color: #000000;
+}
+.about-ul {
+  display: flex;
+}
+.img-about {
+  margin-right: 30px;
+}
+.about {
+  display: flex;
+}
+.about-right {
+  padding-right: 100px;
+}
+.about-p {
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+  color: var(--p-white);
+}
+.about-button {
+  color: var(--gray);
+  background-color: rgba(255, 255, 255, 0);
+}
+.div-servises {
+  margin-bottom: 40px;
+  display: flex;
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+  color: var(--p-dark);
+}
+.servises-left,
+.servises-right {
+  width: 570px;
+}
+.servises-left {
+  margin-right: 30px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.servises {
+  background-image: url(../image/servises.jpg);
+}
+.services-button {
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 120px;
+}
+.online-booking-contacts {
+  background-color: #191c26;
+}
+.contacts {
+  background-image: url(../image/salon.png);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
