@@ -1,0 +1,48 @@
+:root {
+  --font-one: "Open Sans", sans-serif;
+  --font-two: "Raleway", sans-serif;
+  --hover: #ff6c00;
+}
+body {
+  font-family: var(--font-one);
+  font-size: 14px;
+}
+.header {
+}
+.logo {
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+}
+.header a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.nav:hover,
+.nav:focus {
+  color: var(--hover);
+}
+.header-contact {
+  text-transform: uppercase;
+}
+.header-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid var(--hover);
+  border-radius: 25px;
+}

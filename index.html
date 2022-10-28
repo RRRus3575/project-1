@@ -4,43 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>BarberShop</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="./index.html" class="logo">
         <img src="./image/Logo.svg" alt="Logo" width="69" />
       </a>
-      <a href="#">Instagram</a>
-      <a href="#">Youtube</a>
+      <a class="link" href="#">Instagram</a>
+      <a class="link" href="#">Youtube</a>
       <nav>
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#servises">Services and prices</a></li>
-          <li><a href="#barbers">Barbers</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+        <ul class="list navbar">
+          <li><a class="nav link" href="#About">About</a></li>
+          <li><a class="nav link" href="#servises">Services and prices</a></li>
+          <li><a class="nav link" href="#barbers">Barbers</a></li>
+          <li><a class="nav link" href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">ONLINE-BOOKING</button>
+      <a class="link header-contact" href="tel:+380441111111"
+        >+38 044 111 11 11</a
+      >
+      <button type="button" class="header-button">ONLINE-BOOKING</button>
     </header>
     <main>
       <section class="hero">
-        <h1>BarberShop</h1>
+        <h1 class="hero-title">BarberShop</h1>
         <p>
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
         </p>
       </section>
       <section class="about">
-        <ul>
-          <li><img src="./image/mainone.jpg" alt="" width="270" /></li>
-          <li><img src="./image/maintwo.jpg" alt="" width="270" /></li>
+        <ul class="about-ul list">
+          <li class="about-li">
+            <img src="./image/mainone.jpg" alt="" width="270" />
+          </li>
+          <li class="about-li">
+            <img src="./image/maintwo.jpg" alt="" width="270" />
+          </li>
         </ul>
         <div>
           <span id="About">About</span>
-          <h2>Best Barbershop in your city</h2>
+          <h2 class="about-title">Best Barbershop in your city</h2>
           <p>
             If you want to add more confidence to your image, you should
             definitely visit us.
@@ -53,12 +65,12 @@
             improve everyone who comes to us!
           </p>
         </div>
-        <button type="button">ONLINE-BOOKING</button>
+        <button type="button" class="about-button">ONLINE-BOOKING</button>
       </section>
       <section class="servises" id="servises">
         <span>Spend your time with the best masters</span>
         <h2>Services and prices</h2>
-        <ul>
+        <ul class="list">
           <li>
             <p>Men's haircut</p>
             <span>from 300 uah.</span>
@@ -76,7 +88,7 @@
             <span>from 200 uah.</span>
           </li>
         </ul>
-        <ul>
+        <ul class="list">
           <li>
             <p>Trainee’s haircut</p>
             <span>from 50 uah.</span>
@@ -97,7 +109,7 @@
         <button type="button">ONLINE-BOOKING</button>
       </section>
       <section>
-        <ul>
+        <ul class="list">
           <li>
             <span>600<sup>+</sup></span>
             <p>Satisfied customers per day</p>
@@ -127,7 +139,7 @@
       <section class="barbers" id="barbers">
         <span>For true enjoyers of the atmosphere</span>
         <h2>Our barbers</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./image/jonesmith.jpg"
@@ -137,7 +149,7 @@
             />
             <h3>John Smith</h3>
             <p class="profession">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#"
                   ><img src="./image/insta.svg" alt="Instagram" width="44" />
@@ -169,7 +181,7 @@
             />
             <h3>Michele Doe</h3>
             <p class="profession">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#">
                   <img src="./image/insta.svg" alt="Instagram" width="44" />
@@ -201,7 +213,7 @@
             />
             <h3>Alan Black</h3>
             <p class="profession">Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#">
                   <img src="./image/insta.svg" alt="Instagram" width="44" />
@@ -228,7 +240,7 @@
       </section>
       <section>
         <h2 class="none">Portfolio</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./image/latin.jpg"
@@ -262,20 +274,22 @@
         <div class="contacts">
           <h2>Contacts</h2>
           <address>
-            <ul>
+            <ul class="list">
               <li>
-                <img src="./image/map.svg" alt="" width="24" /><a
-                  href="https://goo.gl/maps/JtqcWi4SLKEdR3j88"
+                <img src="./image/map.svg" alt="" width="24" />
+                <a class="link" href="https://goo.gl/maps/JtqcWi4SLKEdR3j88"
                   >st. Vasilkovaya, 7A Kiev, 08132</a
                 >
               </li>
               <li>
                 <img src="./image/phone.svg" alt="" width="24" />
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
+                <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
               </li>
               <li>
                 <img src="./image/mail.svg" alt="" width="24" />
-                <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+                <a class="link" href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
               </li>
             </ul>
           </address>
@@ -286,12 +300,16 @@
     </main>
     <footer>
       <p>&#169; Copyright 2020</p>
-      <ul id="contacts">
+      <ul id="contacts list">
         <li>
-          <a href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="link" href="" target="_blank" rel="noopener noreferrer"
+            >Instagram</a
+          >
         </li>
         <li>
-          <a href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+          <a class="link" href="" target="_blank" rel="noopener noreferrer"
+            >Youtube</a
+          >
         </li>
       </ul>
     </footer>
