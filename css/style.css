@@ -12,6 +12,13 @@ body {
   margin: 0;
   padding: 0;
 }
+.link-insta {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+}
 .header,
 .about,
 .servises,
@@ -33,8 +40,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.navbar {
-}
+
 .nav,
 .header-contact {
   font-weight: 600;
@@ -62,7 +68,13 @@ button {
   border: 1px solid var(--hover);
   border-radius: 25px;
 }
-.header-button {
+button:hover,
+button:active {
+  color: #ffffff;
+  background-color: var(--hover);
+}
+.header-button,
+.online-booking-button {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -157,12 +169,88 @@ button {
   margin-left: 45%;
   margin-right: 45%;
   margin-bottom: 120px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.benefits {
+  display: flex;
+}
+.benefits-li {
+  width: 170px;
+  height: 133px;
+  text-align: center;
+}
+.numbers-benefits {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+}
+.plus-benefits {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+
+  color: var(--hover);
+}
+.benefits-div > p {
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+  color: var(--p-white);
+}
+.barbers-ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.barbers-li-h {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3889;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+}
+.profession {
+  font-size: 14px;
+  line-height: 1.3571;
+  letter-spacing: 0.02em;
+  color: var(--hover);
+}
+.msg-ul {
+  display: flex;
+  justify-content: space-around;
 }
 .online-booking-contacts {
   background-color: #191c26;
 }
+.barbers-li-h,
+.profession,
+.msg-ul {
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.portfolio-ul {
+  display: flex;
+  justify-content: space-around;
+}
+.online-booking-contacts {
+  display: flex;
+}
+.online-booking-button {
+  background-color: rgba(0, 0, 0, 0);
+}
 .contacts {
   background-image: url(../image/salon.png);
+}
+.link-contacts,
+.contacts-p {
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+  color: var(--p-dark);
 }
 .visually-hidden {
   position: absolute;
@@ -170,4 +258,10 @@ button {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.footer > p {
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--p-dark);
 }

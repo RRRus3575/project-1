@@ -18,8 +18,10 @@
       <a href="./index.html" class="logo">
         <img src="./image/Logo.svg" alt="Logo" width="69" />
       </a>
-      <a class="link" href="#">Instagram</a>
-      <a class="link" href="#">Youtube</a>
+      <ul class="list">
+        <a class="link link-insta" href="#">Instagram</a>
+        <a class="link link-insta" href="#">Youtube</a>
+      </ul>
       <div class="background">
         <nav>
           <ul class="list navbar">
@@ -129,25 +131,33 @@
         <button type="button" class="services-button">ONLINE-BOOKING</button>
       </section>
       <section class="benefits">
-        <ul class="list">
-          <li>
-            <span>600<sup>+</sup></span>
+        <ul class="list benefits-ul">
+          <li class="benefits-li">
+            <span class="numbers-benefits"
+              >600<sup class="plus-benefits">+</sup></span
+            >
             <p>Satisfied customers per day</p>
           </li>
-          <li>
-            <span>50<sup>+</sup></span>
+          <li class="benefits-li">
+            <span class="numbers-benefits"
+              >50<sup class="plus-benefits">+</sup></span
+            >
             <p>Awards for excellent service</p>
           </li>
-          <li>
-            <span>20<sup>+</sup></span>
+          <li class="benefits-li">
+            <span class="numbers-benefits"
+              >20<sup class="plus-benefits">+</sup></span
+            >
             <p>Kyiv’s best barbers</p>
           </li>
-          <li>
-            <span>100<sup>+</sup></span>
+          <li class="benefits-li">
+            <span class="numbers-benefits"
+              >100<sup class="plus-benefits">+</sup></span
+            >
             <p>Gifts for regular customers</p>
           </li>
         </ul>
-        <div>
+        <div class="benefits-div">
           <span class="uptitle">Old traditional school</span>
           <h2 class="title h-black">¿Why people come to us?</h2>
           <p>
@@ -159,7 +169,7 @@
       <section class="barbers" id="barbers">
         <span class="uptitle">For true enjoyers of the atmosphere</span>
         <h2 class="title h-black">Our barbers</h2>
-        <ul class="list">
+        <ul class="list barbers-ul">
           <li>
             <img
               src="./image/jonesmith.jpg"
@@ -167,9 +177,9 @@
               width="370"
               height="346"
             />
-            <h3>John Smith</h3>
+            <h3 class="barbers-li-h">John Smith</h3>
             <p class="profession">Extreme Barber</p>
-            <ul class="list">
+            <ul class="list msg-ul">
               <li>
                 <a href="#"
                   ><img src="./image/insta.svg" alt="Instagram" width="44" />
@@ -199,9 +209,9 @@
               width="370"
               height="346"
             />
-            <h3>Michele Doe</h3>
+            <h3 class="barbers-li-h">Michele Doe</h3>
             <p class="profession">Extreme Barber</p>
-            <ul class="list">
+            <ul class="list msg-ul">
               <li>
                 <a href="#">
                   <img src="./image/insta.svg" alt="Instagram" width="44" />
@@ -231,9 +241,9 @@
               width="370"
               height="346"
             />
-            <h3>Alan Black</h3>
+            <h3 class="barbers-li-h">Alan Black</h3>
             <p class="profession">Extreme Barber</p>
-            <ul class="list">
+            <ul class="list msg-ul">
               <li>
                 <a href="#">
                   <img src="./image/insta.svg" alt="Instagram" width="44" />
@@ -261,7 +271,7 @@
       <section class="portfolio">
         <span class="uptitle">In Latin, "barba" means "beard"</span>
         <h2 class="visually-hidden">Portfolio</h2>
-        <ul class="list">
+        <ul class="list portfolio-ul">
           <li>
             <img
               src="./image/latin.jpg"
@@ -281,7 +291,7 @@
           </li>
         </ul>
       </section>
-      <section class="online-booking-contacts">
+      <section class="online-booking-contacts" id="contacts">
         <div class="online-booking">
           <h2 class="title h-white">Online-booking</h2>
           <input type="text" placeholder="NAME*" />
@@ -290,45 +300,59 @@
             <label for="message">Message</label> <br />
             <input type="text" id="message" />
           </form>
-          <button type="button">Send</button>
+          <button type="button" class="button online-booking-button">
+            Send
+          </button>
         </div>
         <div class="contacts">
           <h2 class="title h-white">Contacts</h2>
           <address>
-            <ul class="list">
+            <ul class="list contacts-ul">
               <li>
                 <img src="./image/map.svg" alt="" width="24" />
-                <a class="link" href="https://goo.gl/maps/JtqcWi4SLKEdR3j88"
+                <a
+                  class="link link-contacts"
+                  href="https://goo.gl/maps/JtqcWi4SLKEdR3j88"
                   >st. Vasilkovaya, 7A Kiev, 08132</a
                 >
               </li>
               <li>
                 <img src="./image/phone.svg" alt="" width="24" />
-                <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+                <a class="link link-contacts" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
               </li>
               <li>
                 <img src="./image/mail.svg" alt="" width="24" />
-                <a class="link" href="mailto:barbershop@email.com"
+                <a class="link link-contacts" href="mailto:barbershop@email.com"
                   >barbershop@email.com</a
                 >
               </li>
             </ul>
           </address>
-          <span>Working hours</span>
-          <p>Every day from 9:00 to 22:00</p>
+          <span class="dark-uptitle uptitle">Working hours</span>
+          <p class="contacts-p">Every day from 9:00 to 22:00</p>
         </div>
       </section>
     </main>
     <footer class="footer">
       <p>&#169; Copyright 2020</p>
-      <ul id="contacts list">
+      <ul class="list contacts">
         <li>
-          <a class="link" href="" target="_blank" rel="noopener noreferrer"
+          <a
+            class="link link-insta"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
             >Instagram</a
           >
         </li>
         <li>
-          <a class="link" href="" target="_blank" rel="noopener noreferrer"
+          <a
+            class="link link-insta"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
             >Youtube</a
           >
         </li>
