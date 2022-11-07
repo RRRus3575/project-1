@@ -6,11 +6,37 @@
   --p-dark: #9da4bd;
   --p-white: #555555;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  margin: 0;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
 body {
   font-family: var(--font-one);
   font-size: 14px;
   margin: 0;
   padding: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .link-insta {
   font-weight: 600;
@@ -19,30 +45,33 @@ body {
   letter-spacing: 0.2em;
   color: var(--gray);
 }
-.header,
-.about,
-.servises,
-.benefits,
-.barbers,
-.portfolio,
-.online-booking-contacts,
-.footer {
-  padding-left: 13.5%;
-  padding-right: 13.5%;
-}
+
 .logo {
+  margin-right: 131px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+.header-right {
+  margin-left: auto;
+}
+
 .link {
   text-decoration: none;
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #9da4bd;
+}
 .nav,
 .header-contact {
+  padding-top: 52px;
+  padding-bottom: 52px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3333;
@@ -50,14 +79,22 @@ body {
   color: #ffffff;
 }
 .nav:hover,
-.nav:focus {
+.nav:focus,
+.header-contact:hover,
+.header-contact:focus,
+.link-insta:hover,
+.link-insta:focus {
   color: var(--hover);
 }
 .header-contact {
+  margin-right: 40px;
   text-transform: uppercase;
 }
+.hero {
+  display: flex;
+}
 button {
-  width: 160px;
+  min-width: 160px;
   height: 40px;
   font-style: normal;
   font-weight: 600;
@@ -73,12 +110,14 @@ button:active {
   color: #ffffff;
   background-color: var(--hover);
 }
+
 .header-button,
 .online-booking-button {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
 }
 .hero-title {
+  margin-top: 20px;
   font-family: var(--font-two);
   font-style: normal;
   font-weight: 700;
@@ -97,16 +136,32 @@ button:active {
 .dark-uptitle {
   color: rgba(157, 164, 189, 0.6);
 }
+.link-hero {
+  width: 100px;
+}
 .background {
+  flex-grow: 1;
+  padding-top: 272px;
+  padding-bottom: 208px;
+  padding-left: 100px;
+  padding-right: 100px;
   background-image: url(../image/hero.jpg);
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .hero-p {
+  margin-top: 20px;
+  max-width: 360px;
   font-size: 18px;
   line-height: 1.6666;
   letter-spacing: 0.02em;
   color: var(--p-dark);
 }
 .title {
+  margin-top: 20px;
   font-family: var(--font-two);
   font-style: normal;
   font-weight: 700;
@@ -130,20 +185,31 @@ button:active {
   display: flex;
 }
 .about-right {
-  padding-right: 100px;
+  max-width: 470px;
+}
+.title-about {
+  margin-top: 20px;
 }
 .about-p {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 1.6667;
   letter-spacing: 0.02em;
   color: var(--p-white);
 }
+.about-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.8571;
+  letter-spacing: 0.02em;
+  color: var(--p-white);
+}
 .about-button {
+  margin-top: 42px;
   color: var(--gray);
   background-color: rgba(255, 255, 255, 0);
 }
 .div-servises {
-  margin-bottom: 40px;
   display: flex;
   font-size: 18px;
   line-height: 1.6667;
@@ -153,6 +219,7 @@ button:active {
 .servises-left,
 .servises-right {
   width: 570px;
+  padding: 30px 20px;
 }
 .servises-left {
   margin-right: 30px;
@@ -166,9 +233,10 @@ button:active {
   background-image: url(../image/servises.jpg);
 }
 .services-button {
-  margin-left: 45%;
-  margin-right: 45%;
-  margin-bottom: 120px;
+  display: block;
+  margin-top: 44px;
+  margin-right: auto;
+  margin-left: auto;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -178,7 +246,10 @@ button:active {
 .benefits-li {
   width: 170px;
   height: 133px;
+  padding: 20px 24px;
   text-align: center;
+  color: var(--gray);
+  background-color: #f7f7f7;
 }
 .numbers-benefits {
   font-weight: 700;
@@ -195,18 +266,38 @@ button:active {
 
   color: var(--hover);
 }
+.benefits-ul {
+  text-align: center;
+}
+.benefits-li > p {
+  width: 122px;
+  text-align: center;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+}
 .benefits-div > p {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 1.6667;
   letter-spacing: 0.02em;
   color: var(--p-white);
 }
+.barbers {
+  background-color: #f7f7f7;
+}
 .barbers-ul {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  margin-top: 20px;
 }
+
 .barbers-li-h {
+  margin-top: 30px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3889;
@@ -214,6 +305,7 @@ button:active {
   color: var(--gray);
 }
 .profession {
+  margin-top: 8px;
   font-size: 14px;
   line-height: 1.3571;
   letter-spacing: 0.02em;
@@ -222,9 +314,16 @@ button:active {
 .msg-ul {
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
 }
 .online-booking-contacts {
+  display: flex;
   background-color: #191c26;
+}
+.online-booking {
+  flex-grow: 1;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 .barbers-li-h,
 .profession,
@@ -234,19 +333,39 @@ button:active {
 }
 .portfolio-ul {
   display: flex;
-  justify-content: space-around;
+  gap: 30px;
+  margin-top: 44px;
 }
-.online-booking-contacts {
-  display: flex;
+.online-booking-form {
+  margin-top: 44px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
 }
 .online-booking-button {
+  margin-top: 40px;
   background-color: rgba(0, 0, 0, 0);
 }
 .contacts {
+  flex-grow: 1;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
   background-image: url(../image/salon.png);
+}
+.contacts-ul {
+  margin-top: 40px;
+}
+.contacts > .uptitle {
+  display: block;
+  margin-top: 70px;
 }
 .link-contacts,
 .contacts-p {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 1.6667;
   letter-spacing: 0.02em;
@@ -259,9 +378,25 @@ button:active {
   height: 1px;
   margin: -1px;
 }
+.footer {
+  display: flex;
+  align-items: center;
+}
 .footer > p {
   font-size: 11px;
   line-height: 1.3636;
   letter-spacing: 0.2em;
   color: var(--p-dark);
+}
+.foot-links {
+  display: flex;
+  margin-left: auto;
+}
+.foot-insta {
+  display: block;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.foot-links > li:not(:last-child) {
+  margin-right: 40px;
 }
