@@ -177,10 +177,10 @@ button:active {
 }
 .about-ul {
   display: flex;
-}
-.img-about {
+  gap: 30px;
   margin-right: 30px;
 }
+
 .about {
   display: flex;
 }
@@ -211,6 +211,7 @@ button:active {
 }
 .div-servises {
   display: flex;
+  gap: 30px;
   font-size: 18px;
   line-height: 1.6667;
   letter-spacing: 0.02em;
@@ -221,9 +222,7 @@ button:active {
   width: 570px;
   padding: 30px 20px;
 }
-.servises-left {
-  margin-right: 30px;
-}
+
 .product {
   display: flex;
   justify-content: space-between;
