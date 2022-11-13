@@ -127,14 +127,33 @@ button:active {
   color: #ffffff;
 }
 .uptitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
   color: var(--gray);
 }
+.uptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
 .dark-uptitle {
   color: rgba(157, 164, 189, 0.6);
+}
+.contact-uptitle {
+  margin-top: 70px;
+  color: #ffffff;
+}
+.contact-uptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
 }
 .link-hero {
   width: 100px;
@@ -218,24 +237,57 @@ button:active {
 .div-servises {
   display: flex;
   gap: 30px;
-  font-size: 18px;
-  line-height: 1.6667;
-  letter-spacing: 0.02em;
-  color: var(--p-dark);
+  margin-top: 44px;
 }
 .servises-left,
 .servises-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 570px;
   padding: 30px 20px;
+}
+.servises-left {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+.servises-right {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .product {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.product::before {
+  content: "";
+  flex-grow: 1;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.product p {
+  order: -1;
 }
 .servises {
   background-image: url(../image/servises.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .services-button {
   display: block;
@@ -247,6 +299,21 @@ button:active {
 }
 .benefits {
   display: flex;
+  padding-left: 100px;
+  gap: 130px;
+}
+.benefits-ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 370px;
+}
+.benefits-div {
+  padding-right: 70px;
+  padding-top: 9px;
+}
+.benefits-div h2 {
+  width: 430px;
 }
 .benefits-li {
   width: 170px;
@@ -256,6 +323,12 @@ button:active {
   color: var(--gray);
   background-color: #f7f7f7;
 }
+.benefits-li:nth-child(odd) {
+  margin-right: 30px;
+}
+.benefits-li:nth-child(even) {
+  margin-top: 30px;
+}
 .numbers-benefits {
   font-weight: 700;
   font-size: 42px;
@@ -264,6 +337,9 @@ button:active {
   color: var(--gray);
 }
 .plus-benefits {
+  display: inline-block;
+  padding-top: 11px;
+  vertical-align: top;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -341,14 +417,32 @@ button:active {
   height: 20px;
   fill: currentColor;
 }
-.online-booking-contacts {
-  display: flex;
+.online-div {
   background-color: #191c26;
+  background-image: url(../image/salon.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.online {
+  display: flex;
 }
 .online-booking {
-  flex-grow: 1;
+  width: calc(50% + 15px);
   padding-top: 130px;
   padding-bottom: 120px;
+}
+.contacts {
+  width: calc(50% - 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+}
+.contacts > .title,
+.online-booking > .title {
+  margin-top: 0px;
 }
 .link-contacts {
   display: flex;
@@ -375,6 +469,17 @@ button:active {
   gap: 30px;
   margin-top: 44px;
 }
+.right-form {
+  margin-right: 30px;
+}
+.top-form {
+  width: 270px;
+  height: 24px;
+  color: rgba(157, 164, 189, 0.4);
+}
+.text-form {
+  width: 570px;
+}
 .online-booking-form {
   margin-top: 44px;
   font-weight: 600;
@@ -383,24 +488,18 @@ button:active {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 .online-booking-button {
   margin-top: 40px;
   background-color: rgba(0, 0, 0, 0);
 }
-.contacts {
-  flex-grow: 1;
-  padding-top: 130px;
-  padding-bottom: 120px;
-  padding-left: 100px;
-  background-image: url(../image/salon.png);
-}
 .contacts-ul {
   margin-top: 40px;
-}
-.contacts > .uptitle {
-  display: block;
-  margin-top: 70px;
+  max-width: 270px;
 }
 .link-contacts,
 .contacts-p {
@@ -430,19 +529,17 @@ button:active {
 .foot-links {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  gap: 40px;
 }
 .foot-insta {
   display: block;
   padding-top: 56px;
   padding-bottom: 56px;
 }
-.foot-links > li:not(:last-child) {
-  margin-right: 40px;
-}
-.elem {
-  outline-offset: 50px -50px -50px 50px;
-  outline: 4px solid green;
-  border: 4px solid red;
-  width: 300px;
-  height: 100px;
+.foot-links::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }

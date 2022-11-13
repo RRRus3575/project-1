@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>BarberShop</title>
   </head>
@@ -89,7 +90,7 @@
             </li>
           </ul>
           <div class="about-right">
-            <span id="About" class="uptitle">About</span>
+            <span id="About" class="uptitle uptitle-white">About</span>
             <h2 class="title h-black title-about">
               Best Barbershop in your city
             </h2>
@@ -155,7 +156,7 @@
           <button type="button" class="services-button">ONLINE-BOOKING</button>
         </div>
       </section>
-      <section class="benefits section">
+      <section class="section">
         <div class="container benefits">
           <ul class="list benefits-ul">
             <li class="benefits-li">
@@ -184,7 +185,7 @@
             </li>
           </ul>
           <div class="benefits-div">
-            <span class="uptitle">Old traditional school</span>
+            <span class="uptitle uptitle-white">Old traditional school</span>
             <h2 class="title h-black">¿Why people come to us?</h2>
             <p>
               Only good things are said about us. But it's better to see and
@@ -195,7 +196,7 @@
       </section>
       <section class="barbers section" id="barbers">
         <div class="container barbers">
-          <span class="uptitle">For true enjoyers of the atmosphere</span>
+          <span class="uptitle uptitle-white">For true enjoyers of the atmosphere</span>
           <h2 class="title h-black">Our barbers</h2>
           <ul class="list barbers-ul">
             <li>
@@ -375,7 +376,7 @@
       </section>
       <section class="portfolio section">
         <div class="container portfolio">
-          <span class="uptitle">In Latin, "barba" means "beard"</span>
+          <span class="uptitle uptitle-white">In Latin, "barba" means "beard"</span>
           <h2 class="visually-hidden">Portfolio</h2>
           <ul class="list portfolio-ul">
             <li>
@@ -413,30 +414,32 @@
           </ul>
         </div>
       </section>
-      <section class="online-booking-contacts" id="contacts">
-        <div class="container online-booking-contacts">
-          <div class="online-booking">
+      <div class="online-div">
+        <div class="container online" id="contacts">
+          <section class="online-booking">
             <h2 class="title h-white">Online-booking</h2>
             <input
               type="text"
               placeholder="NAME*"
-              class="online-booking-form"
+              class="online-booking-form top-form right-form"
             />
-            <input type="tel" placeholder="PHOME*" />
+            <input type="tel" class="online-booking-form top-form" placeholder="PHOME*" />
             <form class="online-booking-form">
               <label for="message">Message</label> <br />
-              <input type="text" id="message" />
+              <input type="text" id="message" class="online-booking-form text-form"/>
             </form>
             <button type="button" class="button online-booking-button">
               Send
             </button>
-          </div>
-          <div class="contacts">
+          </section>
+          <section class="contacts">
             <h2 class="title h-white">Contacts</h2>
             <address>
               <ul class="list contacts-ul">
                 <li>
                   <a
+                  target="_blank"
+                    rel="noopener noreferrer"
                     class="link link-contacts"
                     href="https://goo.gl/maps/JtqcWi4SLKEdR3j88"
                     >
@@ -447,7 +450,9 @@
                   >
                 </li>
                 <li>
-                  <a class="link link-contacts" href="tel:+380441111111"
+                  <a target="_blank"
+                  rel="noopener noreferrer"
+                  class="link link-contacts" href="tel:+380441111111"
                     >
                     <svg class="contact-svg">
                       <use href="./image/symbol-defs.svg#icon-phone"></use>
@@ -456,7 +461,8 @@
                   >
                 </li>
                 <li>
-                  <a
+                  <a target="_blank"
+                  rel="noopener noreferrer"
                     class="link link-contacts"
                     href="mailto:barbershop@email.com"
                     >
@@ -468,11 +474,12 @@
                 </li>
               </ul>
             </address>
-            <span class="dark-uptitle uptitle">Working hours</span>
+            <span class="contact-uptitle uptitle">Working hours</span>
             <p class="contacts-p">Every day from 9:00 to 22:00</p>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
+    </div>
     </main>
     <footer class="footer">
       <div class="container footer">
@@ -499,6 +506,5 @@
         </ul>
       </div>
     </footer>
-    <div class="elem "></div>
   </body>
 </html>
