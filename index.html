@@ -34,7 +34,7 @@
           <a class="link header-contact" href="tel:+380441111111">
             +38 044 111 11 11
           </a>
-          <button type="button" class="header-button">ONLINE-BOOKING</button>
+          <a class="header-button button" href="#contacts">ONLINE-BOOKING</a>
         </div>
       </div>
     </header>
@@ -107,7 +107,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-button">ONLINE-BOOKING</button>
+            <a class="about-button button" href="#contacts">ONLINE-BOOKING</a>
           </div>
         </div>
       </section>
@@ -155,7 +155,9 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="services-button">ONLINE-BOOKING</button>
+          <div class="div-button-services">
+          <a class="services-button button" href="#contacts">ONLINE-BOOKING</a>
+        </div>
         </div>
       </section>
       <section class="section">
@@ -420,19 +422,28 @@
         <div class="container online" id="contacts">
           <section class="online-booking">
             <h2 class="title h-white">Online-booking</h2>
+            <form>
+              <label class="input" for="name" >
+              
             <input
               type="text"
-              placeholder="NAME*"
-              class="online-booking-form top-form right-form"
+              class="online-booking-form top-form left-form"
+              id="name"
             />
-            <input type="tel" class="online-booking-form top-form" placeholder="PHOME*" />
-            <form class="online-booking-form">
-              <label for="message">Message</label> <br />
+            <span class="lab label "> NAME*</span>
+            </label>
+              <label class="input" for="tel">            
+            <input type="tel" class="online-booking-form top-form right-form" id="tel"/>
+            <span  class="lab label ">PHOME*</span>
+          </label>
+            <div class="down-form">
               <input type="text" id="message" class="online-booking-form text-form"/>
-            </form>
-            <button type="button" class="button online-booking-button">
+              <label for="message" class="label message">MESSAGE</label>
+            </div>
+            <button type="submit" class="button online-booking-button">
               Send
             </button>
+          </form>
           </section>
           <section class="contacts">
             <h2 class="title h-white">Contacts</h2>
