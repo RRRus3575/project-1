@@ -508,6 +508,7 @@ header {
   border-left: none;
   border-right: none;
   border-bottom: 2px solid rgba(157, 164, 189, 0.4);
+  transition: border-bottom var(--time) linear;
 }
 .online-booking-form:hover,
 .online-booking-form:focus {
@@ -600,12 +601,9 @@ input:active + .label {
   transform: rotateY(180deg) rotateX(180deg);
   transition: color var(--time) linear;
 }
-input {
-  outline: none;
-  color: orange;
-}
-label {
+.label {
   color: rgba(157, 164, 189, 0.4);
+  transition: color 250ms linear;
 }
 .lab {
   position: absolute;
@@ -620,6 +618,14 @@ label {
 input {
   padding-bottom: 10px;
   background-color: transparent;
+  outline: none;
+  color: var(--hover);
+}
+.online-booking-form:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #191c26;
+  -webkit-text-fill-color: var(--hover);
+  border-bottom: 2px solid rgba(157, 164, 189, 0.4);
+  transition: border-bottom 250ms linear;
 }
 .left-form {
   padding-left: 55px;
