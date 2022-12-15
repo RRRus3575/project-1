@@ -1,0 +1,24 @@
+body {
+  font-family: var(--font-one);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 418px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 690px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}

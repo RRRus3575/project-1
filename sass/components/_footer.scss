@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.foot-links {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 40px;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+  p {
+    font-size: 11px;
+    line-height: 1.3636;
+    letter-spacing: 0.2em;
+    color: var(--p-dark);
+  }
+}
+.foot-insta {
+  display: block;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}

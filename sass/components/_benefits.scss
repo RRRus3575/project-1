@@ -1,0 +1,70 @@
+.benefits {
+  display: flex;
+  padding-left: 100px;
+  gap: 130px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 370px;
+  text-align: center;
+}
+.benefits-div {
+  padding-right: 70px;
+  padding-top: 9px;
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6667;
+    letter-spacing: 0.02em;
+    color: var(--p-white);
+  }
+  h2 {
+    width: 430px;
+  }
+}
+
+.benefits-li {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  text-align: center;
+  color: var(--gray);
+  background-color: #f7f7f7;
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
+  p {
+    width: 122px;
+    text-align: center;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3636;
+  }
+}
+
+.numbers-benefits {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+}
+.plus-benefits {
+  display: inline-block;
+  padding-top: 11px;
+  vertical-align: top;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+
+  color: var(--hover);
+}

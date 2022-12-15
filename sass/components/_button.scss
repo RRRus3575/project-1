@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--hover);
+  border-radius: 25px;
+  transition: color var(--time) linear, background-color var(--time) linear;
+  &:hover,
+  &:active {
+    color: #ffffff;
+    background-color: var(--hover);
+  }
+}
+.header-button {
+  margin-top: 40px;
+  color: #ffffff;
+}
+.online-booking-button {
+  margin-top: 40px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.about-button {
+  color: var(--gray);
+  background-color: rgba(255, 255, 255, 0);
+}
+.div-button-services {
+  display: flex;
+  justify-content: center;
+}
+.services-button {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,58 @@
+.barbers {
+  background-color: #f7f7f7;
+}
+.barbers-list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.barbers-li-h {
+  padding-left: 82px;
+  padding-right: 82px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3889;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+}
+.profession {
+  padding-left: 82px;
+  padding-right: 82px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.3571;
+  letter-spacing: 0.02em;
+  color: var(--hover);
+}
+.msg-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.link-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--gray);
+  background-color: #ffffff;
+  border-radius: 25px;
+  transition: color var(--time) linear;
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+}
+
+.msg-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

@@ -1,0 +1,88 @@
+header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 69px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-left: 31px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 131px;
+  }
+}
+.header-right {
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-right: 20px;
+    display: flex;
+  }
+}
+
+.navbar {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color var(--time) linear;
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+}
+.header-contact {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color var(--time) linear;
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+}
+.header-contact {
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+.link-insta {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--gray);
+  &:hover,
+  &:focus {
+    color: var(--hover);
+  }
+}

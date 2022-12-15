@@ -1,0 +1,29 @@
+.uptitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--gray);
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+.dark-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.contact-uptitle {
+  margin-top: 70px;
+  color: #ffffff;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+}
